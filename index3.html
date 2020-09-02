@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Overflow</title>
+    <style media="screen">
+      div {
+        width: 200px;
+        height: 200px;
+        border: 1px solid red;
+        display: inline-block;
+
+      }
+
+      /*nth-of-type 은 같은 계열 중에 몇번*/
+       div:nth-of-type(2) {
+         overflow: hidden;
+       }
+
+      div:nth-of-type(3) {
+        overflow: scroll;
+      }
+
+      div:nth-of-type(4) {
+        overflow-y: scroll;
+        overflow-x: hidden;
+      }
+
+      div:nth-of-type(5) {
+        overflow: auto;
+      }
+
+      div:nth-of-type(5) img {
+        width: 100px;
+      }
+
+      p {
+        width: 500px;
+        height: 200px;
+        border: 1px solid black;
+        overflow: scroll;
+      }
+
+    </style>
+  </head>
+  <body>
+    <h2>overflow</h2>
+    <div>
+      <h4>기본상태 visible</h4>
+      <img src="photo.jpg" alt="">
+    </div>
+
+    <div>
+      <h4>overflow - hidden</h4>
+      <img src="photo.jpg" alt="">
+    </div>
+
+    <div>
+      <h4>overflow- scroll</h4>
+      <img src="photo.jpg" alt="">
+    </div>
+
+    <div>
+      <h4>overflow: x: hidden
+          y: scroll</h4>
+      <img src="photo.jpg" alt="">
+    </div>
+
+    <div>
+      <h4>auto</h4>
+      <img src="photo.jpg" alt="">
+    </div>
+
+<hr>
+
+<p>
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+<br><br>
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+</p>
+
+
+  </body>
+</html>
